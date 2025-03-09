@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ピッチ判定アプリ</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>ピッチ判定アプリ</h1>
+
+        <!-- 正解音選択 -->
+        <div>
+            <label for="correctSound">正解音を選択:</label>
+            <select id="correctSound">
+                <option value="doredo">ドレド</option>
+                <option value="remire">レミレ</option>
+                <option value="mifami">ミファミ</option>
+                <option value="fasofa">ファソファ</option>
+                <option value="solaso">ソラソ</option>
+                <option value="rashira">ラシラ</option>
+                <option value="shidoshi">シドシ</option>
+            </select>
+            <button id="playCorrect">再生</button>
+        </div>
+
+        <!-- 録音操作 -->
+        <div>
+            <button id="startRecord">録音開始</button>
+            <button id="stopRecord" disabled>録音停止</button>
+        </div>
+
+        <!-- 結果表示 -->
+        <div id="result">
+            <h2>結果</h2>
+            <p id="matchRate">一致率: --%</p>
+            <p id="errorDetail">誤差箇所: --</p>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
